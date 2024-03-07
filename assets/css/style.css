@@ -20,16 +20,24 @@ body {
   'opsz' 24
 }
 
-/* Areas */
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "menu-bar"
+        "filtro"
+        "principal"
+        "footer";
+
+        min-width: 100vh;
+    }
 
 nav {
-    grid-area: menu;
+    grid-area: menu-bar;
     background-color: blue;
     color: white;
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .filtro {
@@ -41,41 +49,12 @@ nav {
 .principal {
     grid-area: principal;
     background-color: rgb(149, 149, 149);
-    align-content: center;
     padding: 20px;
 }
 
 footer {
     grid-area: footer;
     background-color: yellow;
-}
-
-
-
-/* @Media */
-
-@media (min-width: 576px) /* Small */ {
-
-    .grid-container {
-        display: grid;
-        grid-template-areas: 
-            "menu"
-            "filtro"
-            "principal"
-            "footer";
-    }
-    }
-
-@media (min-width: 576px) /* Large */ {
-
-    .grid-container {
-        display: grid;
-        grid-template-areas: 
-            "menu filtro"
-            "menu principal"
-            "footer principal";
-    } 
-
 }
 
 /* MENU */
@@ -87,31 +66,16 @@ footer {
     margin: 10px;
 }
 
-h1 {
-    font-size: 14px;
-}
-
-.hambur {
-    margin: 10px;
-}
-
-
-
 /* FILTROS */
 
 label {
     font-size: 12px;
     margin: 12px;
-
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-datalist {
-    margin: 12px;
-
 }
 
 /* PRINCIPAL */
@@ -119,19 +83,13 @@ datalist {
 .card {
     border: 1px solid white;
     border-radius: 10px;
-
+    
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-
-    width: 80%;
     padding: 15px;
-
 }
 
-.principal .card .img img{
-    width: 80%;
+.card.img img{
     border: 1px solid red;
 }
 
@@ -165,4 +123,5 @@ footer {
     align-items: center;
     padding: 20px;
 }
+
 
