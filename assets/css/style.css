@@ -42,7 +42,7 @@ nav {
 .filtro {
     grid-area: filtro;
     background-color: rgb(193, 183, 233);
-    padding: 20px;
+    padding: 15px;
 }
 
 .principal {
@@ -84,11 +84,10 @@ label {
 }
 
 .filtro-llamada {
-    border: 1px solid red;
+    font-size: 16px;
 }
 
-.filtro-01 {
-    border: 1px solid blue;
+.filtro-barra {
     width: 100%;
 }
 
@@ -103,6 +102,7 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     margin: 20px 10px 20px 10px;
     padding: 12px;
 }
@@ -133,7 +133,6 @@ label {
 }
 
 .num {
-    border: 1px solid gray;
     padding: 5px;
     height: 15px;
     width: 15px;
@@ -144,6 +143,12 @@ label {
 
 .num:hover {
     background-color: rgb(195, 195, 195);
+}
+
+.flecha {
+    font-size: medium;
+    color: white;
+    margin: 10px;
 }
 
 /* FOOTER */
@@ -157,14 +162,14 @@ footer {
 
 /* MEDIAQUERY */
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
     nav .menu {
         border: 1px solid red;
         display: none;
     }
 }
 
-@media (min-width: 576px) /* Large */{
+@media (min-width: 577px) /* Large */{
 
     body {
         grid-template-areas: 
