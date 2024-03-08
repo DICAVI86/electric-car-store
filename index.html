@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body class="grid-container">
+<body>
     
-    <nav>
+    <nav class="nav">
         <div class="menu-text">
             <span class="material-symbols-outlined">
                 electric_car
@@ -19,11 +19,17 @@
         </div>  
         <span class="material-symbols-outlined hambur">
             menu
-            </span>
+        </span>
+        <div class="menu">
+            <p>Inicio</p>
+            <p>Catálogo</p>
+            <p>Ofertas</p>
+            <p>Contacto</p>
+        </div>
     </nav>
 
     <section class="filtro">
-        <label>Ordenar por: <input list="precio"></label>
+        <label class="filtro-llamada">Ordenar por: <input class="filtro-barra" list="precio"></label>
         <datalist id="precio">
             <option value="Precio"></option>
             <option value="Marca"></option>
@@ -34,22 +40,64 @@
 
     <section class="principal">
         
+        <div class="card-grid">
         <div class="card">
-            <div class="img">
+            <div class="card-img">
                 <img src="./assets/img/1366_2000.jpeg" alt="Auto electrico N1">
             </div>
-            <p>Modelo</p>
-            <button>Ver más</button>
+            <p class="card-model">Modelo</p>
+            <button class="card-boton">Ver más</button>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="./assets/img/1366_2000.jpeg" alt="Auto electrico N1">
+            </div>
+            <p class="card-model">Modelo</p>
+            <button class="card-boton">Ver más</button>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="./assets/img/1366_2000.jpeg" alt="Auto electrico N1">
+            </div>
+            <p class="card-model">Modelo</p>
+            <button class="card-boton">Ver más</button>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="./assets/img/1366_2000.jpeg" alt="Auto electrico N1">
+            </div>
+            <p class="card-model">Modelo</p>
+            <button class="card-boton">Ver más</button>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="./assets/img/1366_2000.jpeg" alt="Auto electrico N1">
+            </div>
+            <p class="card-model">Modelo</p>
+            <button class="card-boton">Ver más</button>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="./assets/img/1366_2000.jpeg" alt="Auto electrico N1">
+            </div>
+            <p class="card-model">Modelo</p>
+            <button class="card-boton">Ver más</button>
+        </div>
         </div>
 
         <div class="numeral">
-            <span class="material-symbols-outlined num">
+            <span class="material-symbols-outlined flecha">
                 double_arrow
                 </span>
             <div class="num">1</div>
             <div class="num">2</div>
             <div class="num">3</div>
-            <span class="material-symbols-outlined num">
+            <span class="material-symbols-outlined flecha">
                 double_arrow
                 </span>
         </div>
